@@ -1,6 +1,9 @@
 pipeline {
     agent any
-    
+     tools {
+        // Define the Python tool installation by the name you specified in step 2
+        python 'MyPython'
+    }
     stages {
         stage('Checkout') {
             steps {
